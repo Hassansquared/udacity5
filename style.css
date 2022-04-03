@@ -1,0 +1,425 @@
+
+.body{
+    margin:0;
+    padding: 0;
+    
+    
+}
+*{
+    margin: 0;
+}
+.main-nav{
+    display: flex;
+    list-style: none;
+    text-indent: 5px;
+    
+    
+}
+
+
+
+a.navbar{
+    text-decoration: none;
+    color: black;
+    background: white;
+    border-radius: 10px;
+    font-size: 30px;
+    
+
+}
+a:hover{
+    color: blue;
+}
+
+a.card-link{
+    text-decoration: none;
+    back
+}
+
+.cover{
+    
+    max-width: 30rem;
+    
+    
+    
+}
+
+
+
+
+.container{
+    background: rgb(19, 64, 85);;
+    height: 700px;
+    
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 50px 1fr 1fr 100px;
+    grid-template-areas: 
+    "hd"
+    "c1"
+    "c2"
+    "ft"
+
+}
+
+@media(min-width:800px) {
+
+.container{
+    background: rgb(19, 64, 85);;
+   
+    height: 100vh;
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 100px;
+    grid-template-areas: 
+    "hd hd hd hd"
+    "c1 c1 c2 c2"
+    "c1 c1 c2 c2"
+    "c1 c1 c2 c2"
+    "ft ft ft ft"
+    }  
+}
+
+.container > div{
+    
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    
+}
+
+
+
+
+
+
+.nav{
+    grid-area: hd;
+    
+    
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(42, 80, 80);
+  }
+
+  
+  
+.push{
+    margin-left: auto;
+    margin-right: 14px;
+    
+}
+
+.content> img{
+    border-radius: 10px;
+    
+} 
+
+.content> img:hover{
+    transform: scale(1.05);
+    opacity: 20%;
+}
+
+.content{
+    
+    grid-area: c1;
+    background-image: url(img/moody-autumn-day-in-the-dolomites-forest-and-mount-2022-02-08-22-39-25-utc.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-top: 0px;
+    display: inline-block;
+  
+    /* background: rgb(2,0,36); */
+    
+    
+    
+    
+}
+
+@media(min-width:800px) {
+.content{
+    
+    grid-area: c1;
+    background-image: url(img/moody-autumn-day-in-the-dolomites-forest-and-mount-2022-02-08-22-39-25-utc.jpg);
+    background-size: cover;
+    /* background: rgb(2,0,36); */
+    
+    
+    
+    
+}
+}
+.content:hover{
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+
+.container2{
+    padding: 100px;
+}
+
+.footer{
+    background:rgb(19, 64, 85);
+    grid-area: ft;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+div{
+   
+}
+
+div:hover{
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    
+}
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+
+.grid-content{
+    grid-area: c2;
+}
+
+
+.grid-content{
+    grid-area: c2;
+    display: grid;
+    flex-direction: column;
+    background-color: rgb(78, 43, 43);
+    grid-row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+    
+ 
+}
+@media(min-width:700px) {
+.grid-content{
+    grid-area: c2;
+    display: grid;
+    background-color: rgb(78, 43, 43);
+    justify-content: center;
+    grid-gap: 100px;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    overflow: hidden;
+    overflow-y: scroll;
+    grid-template-areas: none
+
+    ;
+
+  
+}
+}
+
+hr{
+    visibility:hidden
+}
+
+
+
+/* 
+.box1{
+    grid-area: tl;
+    
+
+}
+
+ .box2{
+    grid-area: tr;
+}
+
+.box3{
+    grid-area: m1;
+}
+
+.box4{
+    grid-area: m2;
+} 
+
+.box5{
+    grid-area: m3;
+}
+
+.box6{
+    grid-area: m4;
+}
+
+.box7{
+    grid-area: bl;
+}
+
+.box8{
+    grid-area: br;
+}   */
+
+/* .spot{
+    background-color: blueviolet;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 5px;
+    
+} */
+
+.spot> img{
+    
+    width:100%;
+    max-width: 20rem;
+}
+
+
+.button1{
+  background: blue;
+}
+
+
+
+
+
+.box > img{
+    max-width: 100%;
+}
+
+.zone{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    
+}
+
+.zone.content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-inline: 20px;
+    
+    
+    
+}
+
+
+h1{
+    font-weight: bold;
+    color: rgb(248, 190, 81);
+}
+
+
+
+/* .container3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+
+    
+
+} */
+
+.container5{
+    display: grid;
+    height: 700px;
+    background-color: rgb(127, 208, 255);
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 1fr 100px;
+    grid-template-areas:
+    "hd"
+    "b1"
+    "b2"
+    "ft"
+}
+@media(min-width:800px) {
+   
+.container5{
+    display: grid;
+    height: 100vh;
+    background-color: blue;
+    grid-gap: 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 100px;
+    grid-template-areas:
+    "hd hd"
+    "b1 b1"
+    "b2 b2"
+    "ft ft"
+    
+
+}
+
+}
+
+.container5 > div{
+    
+    padding: 10px;
+    
+    
+}
+
+.div.blog-post:hover{
+    transform: none;
+    box-shadow: none;
+}
+
+.div.blog-post:{
+    box-shadow: none;
+}
+
+
+.blog-flex{
+    grid-area: b2;
+    background-color: blue;
+}
+
+
+
+
+
+
+
+img.blogcover{
+    width: 100%;
+    max-width: 200px;
+    wid
+}
+
+img.blogpostimg{
+    width: 100%;
+    max-width: 200px
+    
+}
+
+
+
+
